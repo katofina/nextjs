@@ -1,0 +1,46 @@
+/* styles.css */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1rem;
+  background-color: #f9f9f9;
+}
+
+.hamburger {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.menu {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.menu li {
+  list-style: none;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 1rem 2rem;
+    transform: translateY(-150%);
+    transition: transform 0.3s ease;
+    z-index: 999;
+  }
+
+  .menu.open {
+    transform: translateY(0);
+  }
+}
