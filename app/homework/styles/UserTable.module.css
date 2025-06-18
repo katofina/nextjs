@@ -1,0 +1,29 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.header,
+.row {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 10px;
+  background: #f7f7f7;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.clickable {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.deleteBtn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
